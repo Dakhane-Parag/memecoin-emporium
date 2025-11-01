@@ -31,11 +31,11 @@ const Index = () => {
         <section className="container mx-auto px-6 py-16 border-t border-border">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">
-              Powered by Advanced Payment SDK
+              Powered by WrapPay SDK
             </h2>
             <p className="text-muted-foreground mb-8">
-              Our crypto payment gateway SDK enables seamless, secure transactions with support for 
-              multiple cryptocurrencies. Integrate in minutes, scale to millions.
+              WrapPay is a next-generation crypto payment gateway that enables seamless, secure transactions 
+              with support for multiple cryptocurrencies and payment methods. Integrate in minutes, scale to millions.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div className="bg-card border border-border rounded-lg p-6">
@@ -62,7 +62,7 @@ const Index = () => {
 
         <footer className="border-t border-border py-8 mt-16">
           <div className="container mx-auto px-6 text-center text-sm text-muted-foreground">
-            <p>© 2024 MemeVault. Demo marketplace for payment SDK integration.</p>
+            <p>© 2024 MemeVault. Demo marketplace for WrapPay SDK integration.</p>
           </div>
         </footer>
       </main>

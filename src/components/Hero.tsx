@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10 text-center">
         <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
           <Shield className="h-4 w-4 text-primary" />
-          <span className="text-sm font-medium text-primary">Powered by Advanced Payment SDK</span>
+          <span className="text-sm font-medium text-primary">Powered by WrapPay SDK</span>
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
@@ -30,7 +30,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in">
-          Experience seamless crypto payments with our cutting-edge SDK. 
+          Experience seamless crypto payments with WrapPay SDK. 
           Trade the hottest meme coins with enterprise-grade security.
         </p>
         
@@ -40,7 +40,7 @@ const Hero = () => {
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           <Button size="lg" variant="outline">
-            Learn About SDK
+            Learn About WrapPay
           </Button>
         </div>
 

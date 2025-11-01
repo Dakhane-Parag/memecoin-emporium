@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, TrendingDown } from "lucide-react";
+import PaymentGatewayDialog from "@/components/PaymentGatewayDialog";
 
 interface SubCoin {
   name: string;
@@ -20,6 +22,7 @@ interface CoinCardProps {
 }
 
 const CoinCard = ({ image, name, symbol, price, change, volume, subCoins }: CoinCardProps) => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const isPositive = change > 0;
 
   return (
@@ -68,10 +71,21 @@ const CoinCard = ({ image, name, symbol, price, change, volume, subCoins }: Coin
           </div>
         </div>
 
-        <Button className="w-full" size="lg">
-          Buy with SDK
+        <Button 
+          className="w-full" 
+          size="lg"
+          onClick={() => setIsDialogOpen(true)}
+        >
+          Buy with WrapPay
         </Button>
       </div>
+
+      <PaymentGatewayDialog
+        open={isDialogOpen}
+        onOpenChange={setIsDialogOpen}
+        coinName={name}
+        coinPrice={price}
+      />
     </Card>
   );
 };
